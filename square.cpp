@@ -1,10 +1,4 @@
-#pragma once
-#include "quadrangle.h"
+#include "square.h"
 
-namespace my_namespace {
-	class Square :
-		public Quadrangle {
-	public:
-		Square(int l1);
-	};
-}
+my_namespace::Square::Square(int l1) :
+	Quadrangle(l1, l1, l1, l1, 90, 90, 90, 90, "Квадрат") {}
